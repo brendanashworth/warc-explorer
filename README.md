@@ -11,6 +11,7 @@ or `.warc.gz`.
 ```sh
 $ git clone https://github.com/brendanashworth/warc-explorer.git
 $ cd warc-explorer
+$ npm install
 
 $ bin/warc-explorer archive.warc.gz 
 Booting the warc-explorer...
