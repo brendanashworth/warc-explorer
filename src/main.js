@@ -17,10 +17,6 @@ const archive = (require('./archive'))(process.argv[2]);
 // Start the app.
 const app = (require('./app'))(archive);
 
-// Init the logger.
-const morgan = require('morgan');
-app.use(morgan('tiny'));
-
 // Bind and listen.
 const port = process.env.PORT || 8080;
 const host = process.env.HOST || 'localhost';

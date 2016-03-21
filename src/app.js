@@ -8,6 +8,13 @@ const app = express();
 // Needs to be initiated.
 var archive;
 
+// Init the logger.
+const morgan = require('morgan');
+app.use(morgan('common', {
+    skip: (req, res) => { return !req.url.startsWith('/retrieve'); },
+    immediate: true
+}));
+
 app.get('/', function(req, res) {
     const file = path.resolve(__dirname, '..', 'resources', 'search.html');
     res.sendFile(file);
