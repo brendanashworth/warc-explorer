@@ -4,15 +4,14 @@
 
 ![warc explorer screenshot](./doc/screenshot.png)
 
+## Install
+[![asciicast](https://asciinema.org/a/40058.png)](https://asciinema.org/a/40058)
+
 ## Usage
-The Warc Explorer works only on individual WARC archives — it does not work for multiples. The file can either be `.warc`
-or `.warc.gz`.
+The Warc Explorer only works on individual WARC archives rather than a folder of them.
+The file can either be `.warc` (raw) or `.warc.gz` (compressed).
 
-```sh
-$ git clone https://github.com/brendanashworth/warc-explorer.git
-$ cd warc-explorer
-$ npm install
-
+```
 $ bin/warc-explorer archive.warc.gz 
 Booting the warc-explorer...
 Listening on localhost:8080
@@ -24,7 +23,7 @@ Now you can browse to `localhost:8080`, plug in a URL and start chugging.
 You can configure the host and port to listen on by using the respective `HOST` and `PORT` environment variables.
 
 ```sh
-$ HOST=0.0.0.0 PORT=80 bin/warc-explorer today.warc
+$ HOST=0.0.0.0 PORT=80 bin/warc-explorer 03-21-2016.warc
 Booting the warc-explorer...
 Listening on 0.0.0.0:80
 ```
