@@ -1,0 +1,31 @@
+{
+  "name": "warc-explorer",
+  "version": "1.0.0",
+  "description": "Web explorer for WARC files",
+  "bin": "./bin/warc-explorer",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "express": "^4.13.4",
+    "warc": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brendanashworth/warc-explorer"
+  },
+  "keywords": [
+    "warc",
+    "web",
+    "internet",
+    "archive"
+  ],
+  "author": "Brendan Ashworth <brendan.ashworth@me.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brendanashworth/warc-explorer/issues"
+  },
+  "homepage": "https://github.com/brendanashworth/warc-explorer"
+}

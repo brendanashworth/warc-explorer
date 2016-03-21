@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+// Pass it off to the main program.
+require('../src/main');
